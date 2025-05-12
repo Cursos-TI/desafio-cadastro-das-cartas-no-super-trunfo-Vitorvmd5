@@ -19,13 +19,13 @@ int main() {
 
     printf("Carta 1 \n");
     printf("Insira uma letra para o estado: ");
-    scanf("%c", &estado1);
+    scanf(" %c", &estado1);
     
     printf("Insira um código para a carta: ");
-    scanf("%s", &codigo1);
+    scanf(" %s", codigo1);
 
     printf("Insira uma cidade: ");
-    scanf("%s", &cidade1);
+    scanf(" %s", cidade1);
 
     printf("Insira a população: ");
     scanf("%d", &populacao1);
@@ -49,13 +49,13 @@ int main() {
 
     printf("Carta 2 \n");
     printf("Insira uma letra para o estado: ");
-    scanf("%c", &estado2);
+    scanf(" %c", &estado2);
     
     printf("Insira um código para a carta: ");
-    scanf("%s", &codigo2);
+    scanf(" %s", codigo2);
 
     printf("Insira uma cidade: ");
-    scanf("%s", &cidade2);
+    scanf(" %s", cidade2);
 
     printf("Insira a população: ");
     scanf("%d", &populacao2);
