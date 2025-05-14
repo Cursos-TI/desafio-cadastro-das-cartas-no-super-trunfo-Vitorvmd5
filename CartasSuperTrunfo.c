@@ -39,6 +39,9 @@ int main() {
     printf("Insira a quantidade de pontos turísticos: ");
     scanf("%d", &pontostur1);
 
+    float densidade1 = populacao1/area1;
+    float pibpc1 = pib1/populacao1;
+
     char estado2;
     char codigo2[3];
     char cidade2[30];
@@ -69,13 +72,17 @@ int main() {
     printf("Insira a quantidade de pontos turísticos: ");
     scanf("%d", &pontostur2);
 
-    printf("Carta 1 \n Estado: %c \n Código: %s \n Cidade: %s \n População: %d \n Área: %f km^2 \n PIB: %f bilhões de reais \n Número de pontos turísticos: %d \n", estado1, codigo1, cidade1, populacao1, area1, pib1, pontostur1);
-    printf("Carta 2 \n Estado: %c \n Código: %s \n Cidade: %s \n População: %d \n Área: %f km^2 \n PIB: %f bilhões de reais \n Número de pontos turísticos: %d \n", estado2, codigo2, cidade2, populacao2, area2, pib2, pontostur2);
+    float densidade2 = populacao2/area2;
+    float pibpc2 = pib2/populacao2;
+
+    printf("Carta 1 \n Estado: %c \n Código: %s \n Cidade: %s \n População: %d \n Área: %.2f km² \n PIB: %.2f bilhões de reais \n Número de pontos turísticos: %d \n", estado1, codigo1, cidade1, populacao1, area1, pib1, pontostur1);
+    printf(" Densidade: %.2f hab/km²\n PIB per capita: %.2f reais\n", densidade1, pibpc1);
+    printf("Carta 2 \n Estado: %c \n Código: %s \n Cidade: %s \n População: %d \n Área: %.2f km² \n PIB: %.2f bilhões de reais \n Número de pontos turísticos: %d \n", estado2, codigo2, cidade2, populacao2, area2, pib2, pontostur2);
+    printf(" Densidade: %.2f hab/km²\n PIB per capita: %.2f reais", densidade2, pibpc2);
 
     // Cadastro das Cartas:
     // Sugestão: Utilize a função scanf para capturar as entradas do usuário para cada atributo.
     // Solicite ao usuário que insira as informações de cada cidade, como o código, nome, população, área, etc.
-    
     // Exibição dos Dados das Cartas:
     // Sugestão: Utilize a função printf para exibir as informações das cartas cadastradas de forma clara e organizada.
     // Exiba os valores inseridos para cada atributo da cidade, um por linha.
